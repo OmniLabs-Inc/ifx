@@ -1,0 +1,115 @@
+{
+    "SidebarData": [
+        {
+            "name": "dashboard",
+            "icon": "dashboard",
+            "link": "/dashboard",
+            "children": []
+        },
+        {
+            "name": "profile",
+            "icon": "profile",
+            "link": "/profile",
+            "children": []
+        },
+        {
+            "name": "generation tree",
+            "icon": "generationtree",
+            "link": "/generation",
+            "children": []
+        },
+        {
+            "name": "binary tree",
+            "icon": "binarytree",
+            "link": "/binarytree",
+            "children": []
+        },
+        {
+            "name": "p2p code generate",
+            "icon": "reports",
+            "link": "/code",
+            "children": []
+        },
+        {
+            "name": "p2p code Redeem",
+            "icon": "reports",
+            "link": "/code-reedem",
+            "children": []
+        },
+        {
+            "name": "withdraw history",
+            "icon": "reports",
+            "link": "/withdraw-history",
+            "children": []
+        },
+        {
+            "name": "income",
+            "icon": "incomes",
+            "children": [
+                {
+                    "name": "roi income",
+                    "link": "/roi_income",
+                    "icon": "principal"
+                },
+                {
+                    "name": "direct income",
+                    "link": "/direct_income",
+                    "icon": "principal"
+                },
+                {
+                    "name": "washout income",
+                    "link": "/washoutincome",
+                    "icon": "principal"
+                },
+                {
+                    "name": "matching income",
+                    "link": "/matchingincome",
+                    "icon": "principal"
+                },
+                {
+                    "name": "reward income",
+                    "link": "/reward-income",
+                    "icon": "principal"
+                }
+            ]
+        },
+        
+        {
+            "name": "reports",
+            "icon": "reports",
+            "children": [
+                {
+                    "name": "deposit report",
+                    "icon": "reports",
+                    "link": "/depositreport"
+                },
+                {
+                    "name": "stake report",
+                    "link": "/stake_report",
+                    "icon": "reports"
+                },
+                {
+                    "name": "Team Business Report",
+                    "link": "/team_business",
+                    "icon": "reports"
+                },
+                {
+                    "name": "direct team report",
+                    "icon": "generationtree",
+                    "link": "/directreport"
+                },
+                {
+                    "name": "downline team report",
+                    "icon": "generationtree",
+                    "link": "/downlinereport"
+                }
+            ]
+        },
+        {
+            "name": "Reward System",
+            "icon": "reports",
+            "link": "/reward-tree",
+            "children": []
+        }
+    ]
+}

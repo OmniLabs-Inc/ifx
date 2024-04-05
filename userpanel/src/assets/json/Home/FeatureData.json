@@ -1,0 +1,23 @@
+{
+    "FeatureData":[
+        {
+            "icon": "feature-1.png",
+            "title": "full assurance and safety"
+          },
+  
+          {
+            "icon": "feature-2.png",
+            "title": "instant payment transfer your wallet"
+          },
+  
+          {
+            "icon": "feature-3.png",
+            "title": "100% decentralization"
+          },
+  
+          {
+            "icon": "feature-4.png",
+            "title": "user-friendly interface"
+          }
+    ]
+}

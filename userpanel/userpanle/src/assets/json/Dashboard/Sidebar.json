@@ -1,0 +1,102 @@
+{
+    "SidebarData": [
+        {
+            "name": "dashboard",
+            "icon": "dashboard",
+            "link": "/dashboard",
+            "children": []
+        },
+        {
+            "name": "profile",
+            "icon": "profile",
+            "link": "/profile",
+            "children": []
+        },
+
+        {
+            "name": "team tree",
+            "icon": "generationtree",
+            "link": "/generation",
+            "children": []
+        },
+
+        {
+            "name": "packages",
+            "icon": "principal",
+            "children": [
+
+                {
+                    "name": "trading packages",
+                    "icon": "principal",
+                    "link": "/packages"
+                },
+                {
+                    "name": "education packages",
+                    "icon": "principal",
+                    "link": "/edupackages"
+                }
+
+            ]
+        },
+
+
+        {
+            "name": "earnings",
+            "icon": "incomes",
+            "children": [
+                {
+                    "name": "dividend",
+                    "link": "/roi_income",
+                    "icon": "principal"
+                },
+                {
+                    "name": "referral income",
+                    "link": "/direct_income",
+                    "icon": "principal"
+                },
+
+                {
+                    "name": "level income",
+                    "link": "/levelincome",
+                    "icon": "principal"
+                }
+            ]
+        },
+
+                {
+                    "name": "club income",
+                    "link": "/reward-income",
+                    "icon": "principal",
+                    "children": []
+                },
+
+        {
+            "name": "reports",
+            "icon": "reports",
+            "children": [
+                {
+                    "name": "deposit report",
+                    "icon": "reports",
+                    "link": "/depositreport"
+                },
+                {
+                    "name": "withdraw history",
+                    "icon": "reports",
+                    "link": "/withdraw-history",
+                    "children": []
+                },
+                {
+                    "name": "self investment",
+                    "link": "/stake_report",
+                    "icon": "reports"
+                },
+
+                {
+                    "name": "Team investment",
+                    "icon": "generationtree",
+                    "link": "/directreport"
+                }
+            ]
+        }
+    ]
+}

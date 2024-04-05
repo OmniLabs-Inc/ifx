@@ -1,0 +1,235 @@
+
+
+
+#####
+@token=Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDQ2ZTk3NjkxZmVmMGY2ZTczNTU3ODE1N2RkOTY1ZmFiY2FkZWViYzMyZWI0OGQ3MGJlMjdiYjEwMGJiYmI0MzlkNDE1YWIzYzNjOTcwMjgiLCJpYXQiOjE2ODgwMjc5MDcuMTUwNzQzLCJuYmYiOjE2ODgwMjc5MDcuMTUwNzQ2LCJleHAiOjE3MTk2NTAzMDYuOTQzNTcyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.B0SfBMC_hxzjy42M-zDZzd5UvxgFXqLYX2KWkc_J4ReXQtOMp8xneIntIE2ltGpKpvjtadbdjYpaXbuNJIgHgWt-3rPj-J0psPmPOe499VZnQnW31il2yJAZAHemLAl9YezRgHbzXTm4RnDbS7ftDu6G3as1FtPuYm7SQa2q_gb7mbCgCrTA-FU0U_qQYtorW6bR9Sx-BWzdLdDGhIvOAAy9SE_tXI2-steAWmTakQUVTS7aWUgZWP9wiaD6LFXWsS3EFpuLZ34Z2KY4SgFfzWlpk9iwDTBhH_B33K3CaC1xxLCbz5tHGokwaYYNOOBFKhWvovNbesm3JUt-07bhFvViHjkIArf16j00nZBk7wyNoNue3k3-i1-eAX6YUO_OuIx-B_8_F2yBK8xi1SpzdskbrO6PxBK1IaLI0Ut2V16KbjFl1Pu1VF88EM1wyQFwpkztV0npJN_sVotqM8INExN-y0lo5OXQ6jCTLrSYR__HoZFKQOtY8uwjCCqPLPHYL_h-xFqpqyIFphcNW02jtTwCJlYxnuzgqnkPMYJdZEgXD9blKwtrx6dAtedfEJ-KIqbk2fSD4YUdtd4xdf5MlLevmhj-CmqsYgeG2nrnRy-TnA3YJY7U0S821RFYRUdqKpkwLvhbJuNt6WcVdbDqxBhD-zF4TGp_hW4UbkFE5o4
+#####
+POST http://192.168.11.67:5000/api/register
+Content-Type: application/json
+
+{
+    "name":"ajaythakur",
+    "email":"ajaythakur@mail.com",
+    "password":"Test@123",
+    "confirm_password":"Test@123",
+    "sponser":"QBC952934279"
+}
+
+
+#####
+POST http://192.168.11.67:8000/api/admin/plan/create
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}
+
+# {
+#     "name":"Business",
+#     "days":"10000",
+#     "min_amount":"250",
+#     "min_equity_month":"10",
+#     "max_equity_month":"12",
+#     "median_equity_month":"2"
+# }
+
+#####
+GET http://192.168.11.67:8000/api/open/plan/get
+Content-Type: application/json
+Accept: application/json
+
+#####
+GET http://127.0.0.1:8000/api/admin/income/matching?page=1&per_page=10&user_id=&matching_income=&week_start_date=&week_end_date=&status=
+Content-Type: application/json
+Authorization: {{ token }}
+
+#####
+DELETE http://192.168.11.67:8000/api/logout
+Accept: application/json
+Authorization: {{ token }}
+
+#####
+GET  http://192.168.1.7:8000/api/downline_report?id=13
+Authorization: {{ token }}
+Accept: application/json
+
+
+
+#####
+GET http://192.168.11.103:8000/api/tree/binary
+Authorization: {{ token }}
+Accept: application/json
+
+#####
+POST http://192.168.11.67:8000/api/deposit/c
+Authorization: {{ token }}
+Content-Type: application/json
+
+{
+    "tx_id":"PHaiEn8jI2Cc91deNsfyU4Yrv0AqhtR3SV7GMmoOQpbzZKJg65",
+    "reason":"USDT"
+}
+
+#####
+POST http://192.168.11.67:8000/api/deposit/i
+Authorization: {{ token }}
+Content-Type: application/json
+
+{
+    "amount":"500",
+    "currency":"USDT"
+}
+
+#####
+POST http://192.168.11.67:8000/api/deposit/v
+Authorization: {{ token }}
+Content-Type: application/json
+
+{
+    "txhash":"c8c381abd0bc471a94e772951cd3dc5b5f8b7baa7c99f7e41d7712b68b8260e8",
+    "tx_id":"jxJaBRA6cC7lLsgWi4ze51XVIYowTUvpKDkEb2dmFQfrySM3H9",
+    "from_address":"THS1GJKqcVnTNYGJkrE2hzjT8M8HGZae83"
+}
+
+#####
+POST http://192.168.11.67:5000/api/stake/plan
+Content-Type: application/json
+Authorization: {{ token }}
+
+{
+    "plan_id":"1",
+    "amount":"500"
+}
+
+// MTJ0WU1IcFQ3NERZaVpER1VsUk1YUT09
+// MTJ0WU1IcFQ3NERZaVpER1VsUk1YUT09
+
+// lara - QytZbmlUNnYwdGFOallPS2IveDYyWVFCelF4Wk5Ob1I4Y2FRTHROU3Qwdz0=
+
+#####
+POST http://192.168.11.67:5000/api/admin/roi/start?d=2023-05-02
+Content-Type: application/json
+Authorization: {{ token }}
+
+
+#####
+GET http://192.168.11.67:5000/api/dashboard/get
+Content-Type: application/json
+Authorization: {{ token }}
+
+
+######
+POST http://192.168.11.67:5000/api/admin/match/start
+Content-Type: application/json
+Authorization: {{ token }}
+
+
+######
+GET http://192.168.11.103:8000/api/test
+Content-Type: application/json
+
+######
+POST http://192.168.11.67:5000/api/changepassword
+Content-Type: application/json
+Authorization: {{ token }}
+
+# {
+#     "old_password":"Test@1232",
+#     "new_password":"Test@123",
+#     "confirm_password":"Test@123"
+# }
+
+#######
+
+POST  http://192.168.11.103:8000/api/admin/match/start
+Content-Type: application/json
+Authorization: {{ token }}
+
+#######
+GET  http://192.168.11.103:8000/api/income/roi
+Content-Type: application/json
+Authorization: {{ token }}
+#######
+GET  http://192.168.11.103:8000/api/income/level
+Content-Type: application/json
+Authorization: {{ token }}
+#######
+
+GET  http://192.168.11.103:8000/api/deposit/report
+Content-Type: application/json
+Authorization: {{ token }}
+
+#######
+
+GET  http://192.168.11.103:8000/api/stake/report
+Content-Type: application/json
+Authorization: {{ token }}
+#######
+
+GET  http://192.168.11.103:8000/api/wallet/report
+Content-Type: application/json
+Authorization: {{ token }}
+#######
+
+GET  http://192.168.11.103:8000/api/direct/report
+Content-Type: application/json
+Authorization: {{ token }}
+
+#######
+POST http://192.168.11.162:8000/api/swap/create
+Content-Type: application/json
+Authorization: {{ token }}
+
+{
+    "amount":"1",
+    "from_currency":"RMN",
+    "to_currency":"TRX"
+}
+
+
+######
+GET http://192.168.11.162:8000/api/swap/history
+Content-Type: application/json
+Authorization: {{ token }}
+
+######
+
+POST http://192.168.11.162:8000/api/admin/income-generate/roi-level
+Content-Type: application/json
+Authorization: {{ token }}
+
+{
+    "api_key":"A27B854C93C96EL883B33MB4D4B3EACEb6161A3323DD819458DWEYGZH2K4"
+}
+
+######
+POST http://192.168.11.162:8000/api/admin/income-generate/match
+Content-Type: application/json
+Authorization: {{ token }}
+
+{
+    "api_key":"AShVVZx4YuLcdJSu1QM3kc1tGiE04Zl5XR84JNijC9WQKYDNFIP6yz7M7pfhyC"
+}
+
+######
+POST http://192.168.11.162:8000/api/admin/income-generate/royal
+Content-Type: application/json
+Authorization: {{ token }}
+
+{
+    "api_key":"IGn4NFAJflBxPL9TuUNXV804ZTe0Qqzqs5EbB5PYdBWF6MKashLwPAoSTCmkO"
+}
+
+######
+POST http://192.168.11.162:8000/api/admin/income-generate/blaster
+Content-Type: application/json
+Authorization: {{ token }}
+
+{
+    "api_key":"sxjeOZrVX9Vq8d8ov8XMNiDQPtQqyv8MkCeNGjkRF5Od6N9lsojtrt2incfwXr1"
+}
+
+######
+POST http://192.168.11.162:8000/api/admin/stake-plan/expiry
+Content-Type: application/json
+Authorization: {{ token }}
+
+######

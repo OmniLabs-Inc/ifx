@@ -1,0 +1,29 @@
+{
+    "GrowthMetgainData":[
+        {
+            "class": "layer1",
+            "image": "growth-metgain-img1.png",
+            "heading": "Exceptional Support",
+            "para": "Our team is dedicated to helping you achieve the most from your skills."
+          },
+          {
+            "class": "layer2",
+            "image": "growth-metgain-img2.png",
+            "heading": "Earnings",
+            "para": "Earnings are instantly credited to your private wallet as soon a any transaction is confirmed on the blockchain."
+          },
+  
+          {
+            "class": "layer3",
+            "image": "growth-metgain-img3.png",
+            "heading": "Real-time Stats",
+            "para": "Real-Time statistic is available to track the growth of your team as well as your earnings."
+          },
+          {
+            "class": "layer4",
+            "image": "growth-metgain-img4.png",
+            "heading": "Impossible To Hack",
+            "para": "Smart contracts are put on immutable ledger called Blockchain, which is impossible to hack."
+          }
+    ]
+}

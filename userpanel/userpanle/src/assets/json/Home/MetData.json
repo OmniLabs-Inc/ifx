@@ -1,0 +1,17 @@
+{
+    "MetData":[
+        {
+            "img1": "ab-token1.png",
+            "para1": "real estate",
+            "img2": "ab-token2.png",
+            "para2": "E-commerce"
+          },
+  
+          {
+            "img1": "ab-token3.png",
+            "para1": "metaverse",
+            "img2": "ab-token4.png",
+            "para2": "NFTs"
+          }
+    ]
+}
